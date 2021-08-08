@@ -49,7 +49,7 @@ pipeline {
 		}
 		stage('push docker image') {
 			steps {
-				sh ("docker push  ${params.DOCKER_REPO_ID}/${params.MS_NAME}:${params.DOCKER_TAG")
+				sh ("docker push  ${params.DOCKER_REPO_ID}/${params.MS_NAME}:${params.DOCKER_TAG}")
 			}
         }
 // 		stage('create deployment') {
